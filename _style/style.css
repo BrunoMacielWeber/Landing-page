@@ -29,7 +29,7 @@ body {
 
 /* Event form */
 #event-description {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../_img/hrz-5.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../_img/capa.jpg");
     background-position: center;
     background-size: cover;
     height: 85vh;
