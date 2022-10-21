@@ -117,8 +117,15 @@ body {
 #key-benefits h2 {
     background-color: var(--secondary);
     text-align: center;
-    padding: 2em;
     font-weight: 500;
+    padding-top: 2em;
+}
+
+#key-benefits h3 {
+    background-color: var(--secondary);
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 3em;
 }
 
 .benefits {
@@ -148,15 +155,15 @@ body {
 }
 
 #benefit-1 {
-    background-image: url("../_img/sqr-1.jpg");
+    background-image: url("../_img/pc-rapido.jpg");
 }
 
 #benefit-2 {
-    background-image: url("../_img/sqr-2.jpg");
+    background-image: url("../_img/pc-manutencao.jpg");
 }
 
 #benefit-3 {
-    background-image: url("../_img/sqr-3.jpg");
+    background-image: url("../_img/pc-suporte.jpg");
 }
 
 /* Event location */
