@@ -1,178 +1,131 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("../_vendor/Fonte_Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("../_vendor/Fonte_Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 
 :root {
-    --primary: #EB1CCC;
-    --secondary: #95989A;
-    --text-color: #FFF;
-    --text-secundary: #000;
-    --text-tertiary: #5d5d5d;
+  --primary: #eb1ccc;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secundary: #000;
+  --text-tertiary: #5d5d5d;
 }
 
 * {
-    font-family: 'Montserrat';
-    margin: 0;
-    padding: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 1366px;
-    margin: 0 auto;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 body {
-    box-shadow: 2px 2px 10px black;
+  box-shadow: 2px 2px 10px black;
 }
 
-/* Event form */
-#event-description {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../_img/capa.png");
-    background-position: center;
-    background-size: cover;
-    height: 85vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--text-color);
-    min-height: 500px;    
+/* Initial page form */
+#initial-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../_img/capa.png");
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+  min-height: 500px;
 }
 
-#disclaimer h2,
-#disclaimer .event-date {
-    color: var(--primary)
+#text h2 {
+  color: var(--primary);
 }
 
-#disclaimer h2 {
-    font-size: 3em;
-    margin-bottom: 1em;
+#text h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
 }
 
-#disclaimer .about-event {
-    font-size: 2em;
-    text-transform: uppercase;
-    max-width: 350px;
-    font-weight: bold;
-    margin-bottom: 1em;
+#text .about-event {
+  font-size: 2em;
+  text-transform: uppercase;
+  max-width: 350px;
+  font-weight: bold;
+  margin-bottom: 1em;
 }
 
-#disclaimer p {
-    font-size: 1.2em;
-    margin-bottom: .3em;
-}
-
-#disclaimer .event-date {
-    font-weight: bold;
-}
-
-#subscription-form {
-    background-color: var(--secondary);
-    padding: 2em;
-    max-width: 22%;
-}
-
-#subscription-form p {
-    font-size: 1.5em;
-    color: var(--text-secundary);
-    margin-bottom: 1em;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.8em;
-}
-
-.form-group label {
-    color: var(--text-tertiary);
-    margin-bottom: .3em;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group select {
-    padding: 6px 8px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
+#text p {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
 }
 
 .btn {
-    background-color: var(--primary);
-    color: var(--text-color);
-    text-transform: uppercase;
-    width: 100%;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-    opacity: 0.8;
+  background-color: var(--primary);
+  color: var(--text-color);
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .btn:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-/* Benefits section */
-#key-benefits h2 {
-    background-color: var(--secondary);
-    text-align: center;
-    font-weight: 500;
-    padding-top: 2em;
-}
-
-#key-benefits h3 {
-    background-color: var(--secondary);
-    text-align: center;
-    font-weight: 500;
-    padding-bottom: 3em;
-    margin-top: -1px;
-}
-
-.benefits {
-    display: flex;
-    justify-content: space-around;
-    padding: 4em;
+/* Details container */
+#details {
     width: 80%;
-    margin: 0 auto;
-}
-
-.benefit {
-    text-align: center;
+    margin: 4% auto;
+  }
+  
+  .detail {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 30%;
-    background-color: var(--secondary);
-    border-radius: 5%;
-    color: var(--text-color);
-    height: 300px;
-}
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 5%;
+    margin-bottom: 4em;
+  }
+  
+  .detail img {
+    width: 50%;
+    border-radius: 2%;
+  }
+  
+  .detail h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  
+  #detail-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+  
+  .detail-description {
+    width: 100%;
+    padding-left: 2em;
+  }
+  
+  .detail-description ul {
+    list-style-position: inside;
+  }
+  
+  .detail-description ul li {
+    margin-bottom: 0.4em;
+  }
+  
+  .detail-description ul li:last-child {
+    font-weight: bold;
+  }
 
-.benefit .benefit-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    margin: 1em;
-}
-
-#benefit-1 {
-    background-image: url("../_img/pc-rapido.png");
-}
-
-#benefit-2 {
-    background-image: url("../_img/pc-manutencao.png");
-}
-
-#benefit-3 {
-    background-image: url("../_img/pc-suporte.png");
-}
-
-/* Event location */
-#location {
+/* Presentation */
+#presentation {
     height: 400px;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../_img/pc-capa2.png");
     background-position: center;
@@ -181,325 +134,259 @@ body {
     align-items: center;
     justify-content: space-around;
     color: var(--text-color);
-}
-
-#address,
-#about-location {
-    max-width: 30%;
-}
-
-#address {
+  }
+  
+  #image-me {
     display: flex;
-}
-
-#address i {
-    color: var(--primary);
-    font-size: 4em;
-    margin-right: 0.5em;
-}
-
-#address-details {
-    text-align: center;
-    font-size: 1.3em;
-}
-
-#about-location h3 {
-    color: var(--primary);
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-}
-
-#about-location p {
-    line-height: 1.5em;
-}
-
-/* Event details container */
-#details {
+    max-width: 40%;
+  }
+  
+  #image-me img {
     width: 80%;
-    margin: 4% auto;
+  }
+  
+  #about-me {
+    max-width: 60%;
+  }
+
+/* Social Proof section */
+#social-proof h2 {
+  background-color: var(--secondary);
+  text-align: center;
+  font-weight: 500;
+  padding-top: 2em;
 }
 
-.detail {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    gap: 5%;
-    margin-bottom: 4em;
+#social-proof h3 {
+  background-color: var(--secondary);
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 3em;
+  margin-top: -1px;
 }
 
-.detail img {
-    width: 50%;
+.proofs {
+  display: flex;
+  justify-content: space-around;
+  padding: 4em;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.detail h3 {
-    margin-bottom: 1em;
-    font-size: 2em;
-    font-weight: 500;
+.proof {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30%;
+  background-color: var(--secondary);
+  border-radius: 5%;
+  color: var(--text-color);
+  height: 300px;
 }
 
-#detail-1 h3 {
-    font-size: 3em;
-    font-weight: 700;
-}
-
-.detail-description {
-    width: 100%;
-    padding-left: 2em;
-}
-
-.detail-description ul {
-    list-style-position: inside;
-}
-
-.detail-description ul li {
-    margin-bottom: 0.4em;
-}
-
-.detail-description ul li:last-child {
-    font-weight: bold;
+.proof .aspas-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 1em;
+  background-image: url("../_img/aspas-social.png");
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 /* Call to action section */
 #cta {
-    height: 300px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../_img/pc-capa.png");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color);
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../_img/pc-capa.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
 }
 
 #cta h3 {
-    margin-bottom: 1.2em;
-    font-size: 2em;
-    font-weight: 500;
+  margin-bottom: 0.8em;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#cta h2 {
+  margin-bottom: 2.4em;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 #cta .btn {
-    width: 30%;
-    margin: 0 auto;
-    font-weight: 600;
-    font-size: 1.2em;
+  width: 30%;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-decoration: none;
 }
 
 /* Footer */
 #footer {
-    text-align: center;
-    color: var(--secondary);
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  text-align: center;
+  color: var(--secondary);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #footer h3 {
-    font-size: 1.8em;
-    margin-bottom: .5em;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
 }
 
 #footer p:nth-child(2) {
-    margin-bottom: 1em;
-    font-size: 1.2em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+#footer p:nth-child(3) {
+  cursor: pointer;
+}
+
+#footer p:nth-child(4) {
+  cursor: pointer;
+}
+
+#footer p {
+  padding-bottom: 0.3em;
 }
 
 #footer span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Mobile */
 @media (max-width: 480px) {
-    .btn {
-        opacity: 1;
-    }
+  .btn {
+    opacity: 1;
+  }
 
-    /* Event form */
-    #event-description {
-        flex-direction: column;
-        height: auto;
-    }
+  /* Initial page form */
+  #initial-page {
+    flex-direction: column;
+    height: auto;
+  }
 
-    #disclaimer {
-        padding: 2em;
-    }
+  #text {
+    padding: 2em;
+  }
 
-    #disclaimer h2 {
-        margin-bottom: .5em;
-    }
+  #text h2 {
+    font-size: 2.8em;
+    margin-bottom: 0.5em;
+  }
 
-    #subscription-form {
-        max-width: 70%;
-        margin-bottom: 2em;
-    }
+  #text .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
 
-    /* Benefits section */
-    #key-benefits {
-        padding-top: 4%;
-    }
+  /* Details section */
+  .detail {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+  }
 
-    .benefits {
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-        padding: 2em;
-    }
+  .detail img {
+    width: 100%;
+    margin: 2em 0;
+  }
 
-    .benefit {
-        max-width: 100%;
-        margin-bottom: 2em;
-    }
+  #detail-1 img {
+    display: none;
+  }
 
-    .benefit p {
-        max-width: 85%;
-    }
+  .detail-description {
+    padding: 1em 0;
+  }
 
-    .benefit .benefit-img {
-        margin-top: -20px;
-    }
+  #detail-3 img {
+    order: 2;
+  }
 
-    /* Event location */
-    #location {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-        padding: 2em 0;
-    }
+  #detail-3 .detail-description {
+    order: 1;
+  }
 
-    #address {
-        order: 2;
-        flex-direction: column;
-        max-width: 100%;
-    }
+  /* Presentation section */
+  #presentation {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 2em 0;
+  }
 
-    #address i {
-        margin: .3em 0;
-    }
+  #address {
+    order: 2;
+    flex-direction: column;
+    max-width: 100%;
+  }
 
-    #about-location {
-        order: 1;
-        max-width: 100%;
-    }
+  #about-me {
+    order: 1;
+    max-width: 100%;
+  }
 
-    #about-location h3 {
-        margin-bottom: 0;
-    }
+  #about-me h3 {
+    margin-bottom: 0;
+  }
 
-    #about-location p {
-        display: none;
-    }
+  #about-me p {
+    display: none;
+  }
 
-    /* Event details container */
-    .detail {
-        flex-direction: column;
-        margin-bottom: .5em;
-        gap: 0;
-    }
+  /* Social Proof section */
+  #social-proof {
+    padding-top: 4%;
+  }
 
-    .detail img {
-        width: 100%;
-        margin: 2em 0;
-    }
+  .proofs {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+  }
 
-    #detail-1 img {
-        display: none;
-    }
+  .proof {
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
 
-    .detail-description {
-        padding: 1em 0;
-    }
+  .proof p {
+    max-width: 85%;
+  }
 
-    #detail-3 img {
-        order: 2;
-    }
+  .proof .aspas-img {
+    margin-top: 0px;
+  }
 
-    #detail-3 .detail-description {
-        order: 1;
-    }
+  /* Call to action section */
+  #cta {
+    text-align: center;
+  }
 
-    /* Call to action sextion */
-    #cta {
-        text-align: center;
-    }
-
-    #cta .btn {
-        width: 80%;
-    }
+  #cta .btn {
+    width: 80%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .btn {
-        opacity: 1;
-    }
-
-    /* Event form */
-    #event-description {
-        flex-direction: row;
-        height: auto;
-    }
-    
-    #subscription-form {
-        max-width: 40%;
-        margin-bottom: 2em;
-    }
-
-    /* Benefits section */
-    .benefits {
-        flex-direction: row;
-        align-items: center;
-        width: auto;
-        padding: 2em;
-    }
-
-    .benefit {
-        max-width: 100%;
-        margin-bottom: 2em;
-    }
-
-    .benefit p {
-        width: 80%;
-    }
-
-    .benefit .benefit-img {
-        width: 100px;
-        height: 100px;
-    }
-
-    /* Event location */
-    #location {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-        padding: 2em 0;
-    }
-
-    #address {
-        order: 2;
-        flex-direction: column;
-        max-width: 100%;
-    }
-
-    #address i {
-        margin: .3em 0;
-    }
-
-    #about-location {
-        order: 1;
-        max-width: 100%;
-    }
-
-    #about-location h3 {
-        margin-bottom: 0;
-    }
-
-    #about-location p {
-        display: none;
-    }
-    
-     /* Event details container */
-    #detail-1 img {
-        display: none;
-    }
+  .btn {
+    opacity: 1;
+  }
 }
