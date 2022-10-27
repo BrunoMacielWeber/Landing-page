@@ -6,8 +6,9 @@
 }
 
 :root {
-  --primary: #eb1ccc;
-  --secondary: #95989a;
+  --primary: #40ff00;
+  --secondary: #73bf5b;
+  --tertiary: #116900;
   --text-color: #fff;
   --text-secundary: #000;
   --text-tertiary: #5d5d5d;
@@ -66,7 +67,7 @@ body {
 
 .btn {
   background-color: var(--primary);
-  color: var(--text-color);
+  color: var(--text-secundary);
   text-transform: uppercase;
   width: 100%;
   border: none;
@@ -159,6 +160,18 @@ body {
   color: var(--primary);
 }
 
+#learn-more {
+  margin-top: 2em;
+  font-size: 10pt;
+  cursor: pointer;
+}
+
+#learn-more i {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #0a66c2;
+}
+
 /* Social Proof section */
 #social-proof {
   background-color: var(--background);
@@ -199,7 +212,7 @@ body {
 }
 
 .proof h6 {
-  background-color: var(--text-tertiary);
+  background-color: var(--tertiary);
   width: 100%;
   text-align: center;
   font-weight: 500;
@@ -259,7 +272,7 @@ body {
 /* Footer */
 #footer {
   text-align: center;
-  color: var(--secondary);
+  color: var(--text-tertiary);
   height: 250px;
   display: flex;
   flex-direction: column;
