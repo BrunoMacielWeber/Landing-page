@@ -160,6 +160,10 @@ body {
   color: var(--primary);
 }
 
+#about-me p {
+  padding-right: 10%;
+}
+
 #learn-more {
   margin-top: 2em;
   font-size: 10pt;
@@ -301,6 +305,11 @@ body {
   padding-bottom: 0.9em;
 }
 
+#footer h1 {
+  position: absolute;
+  bottom: 0;
+}
+
 #footer span {
   font-weight: bold;
 }
@@ -386,6 +395,7 @@ body {
   }
 
   #about-me p {
+    padding-right: 0;
     padding-top: 1em;
     width: 90%;
     font-size: 18px;
