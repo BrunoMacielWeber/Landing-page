@@ -6,9 +6,9 @@
 }
 
 :root {
-  --primary: #40ff00;
-  --secondary: #73bf5b;
-  --tertiary: #116900;
+  --primary: #00ccff;
+  --secondary: #0e88b5;
+  --tertiary: #093f79;
   --text-color: #fff;
   --text-secundary: #000;
   --text-tertiary: #5d5d5d;
@@ -183,7 +183,8 @@ body {
 }
 
 #social-proof h2 {
-  background-color: var(--secondary);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,63,121,1) 29%, rgba(14,136,181,1) 81%, rgba(0,204,255,1) 100%);
   text-align: center;
   font-weight: 500;
   padding: 2em;
