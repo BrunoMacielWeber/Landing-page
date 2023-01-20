@@ -37,22 +37,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+#text img {
+  width: 300px;
+}
 #text {
   position: absolute;
   color: #fff;
   z-index: 1;
-}
-#text .about-event {
-  font-size: 2em;
-  text-transform: uppercase;
-  max-width: 350px;
-  font-weight: bold;
-  margin-bottom: 1em;
-}
-#text h2 {
-  font-size: 3em;
-  margin-bottom: 1em;
-  color: var(--primary);
 }
 video {
   width: 100%;
