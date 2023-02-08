@@ -359,6 +359,12 @@ h5 {
 #footer p:nth-child(4) {
   cursor: pointer;
 }
+#footer p:nth-child(5) {
+  cursor: pointer;
+}
+#footer p:nth-child(6) {
+  cursor: pointer;
+}
 #footer p {
   padding-bottom: 0.9em;
 }
